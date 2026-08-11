@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="fname">Name:</label> <br>
+        <input type="text" placeholder="Enter your name" name="fname" id="fname"><br>
+
+        <label for="phone">Phone:</label> <br>
+        <input type="tel" placeholder="Enter your phone number" name="phone" id="phone"> <br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" placeholder="Enter your email" name="email" id="email"> <br>
+
+        <label for="password">Password:</label> <br>
+        <input type="password" minlength="5" maxlength="8"> <br>
+
+        <p>Experience:</p>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Intermediate</label><br>
+        <input type="radio" id="senior" name="level" value="senior">
+        <label for="senior">Senior</label><br>
+
+        <p>Technologies:</p>
+        <input type="checkbox" id="html" name="tech" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="tech" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="tech" value="js">
+        <label for="js">JavaScript</label><br>
+
+        <label for="Country">Country:</label>
+        <select id="Country" name="Country">
+            <option value="">choose your Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br>
+
+        <label for="msg">Message:</label><br>
+        <textarea name="msg" id="msg" placeholder="type here..."></textarea><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label for="resume">Upload your resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc"><br>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
