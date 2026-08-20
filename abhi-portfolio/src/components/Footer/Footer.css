@@ -1,0 +1,10 @@
+.site-footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px 5%;
+}
+.site-footer a {
+  color: white;
+  margin: 0 10px;
+}

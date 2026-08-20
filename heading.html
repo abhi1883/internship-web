@@ -1,0 +1,22 @@
+<script>
+    // 1. var basics
+    var a = 10;
+    var b = 10;
+    console.log(a + b); // 20
+
+    // 2. let is block-scoped (private to { })
+    {
+        let x = 10;
+        console.log(x); // 10 (accessible inside block)
+    }
+    // console.log(x); // ❌ Error: x is not defined outside the block
+
+    // 3. let vs const
+    let y = 10;
+    y = 20;           // ✅ let can be reassigned
+    console.log(y);   // 20
+
+    const z = 10;
+    // z = 20;         // ❌ Error: Assignment to constant variable
+    console.log(z);   // 10
+</script>

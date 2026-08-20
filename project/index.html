@@ -8,7 +8,8 @@
     <title>Abhinanda | Web Developer Portfolio</title>
     <meta
       name="description"
-      content="Full-stack web developer specializing in React and Node.js. Available for freelance projects."
+      content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects."
     />
     <meta
       name="keywords"
@@ -30,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Abhinanda | Web Developer" />
     <meta name="twitter:description" content="Check out my portfolio!" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
@@ -44,7 +45,7 @@
         </ul>
         <button
           class="theme-toggle"
-          aria-label="Toggle dark mode"
+          aria-label="Toggle Dark mode"
           title="Toggle dark mode"
         >
           🌙
@@ -58,7 +59,6 @@
         </button>
       </nav>
     </header>
-
     <main>
       <section class="hero-section" id="hero">
         <h1>Hi, I'm Abhinanda 👋</h1>
@@ -66,8 +66,8 @@
           <b>I'm a passionate web developer</b>
         </p>
         <div class="hero-button">
-          <a href="#projects" class="btn primary">View My Project</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+          <a href="#projects" class="btn btn-primary">View My Project</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
       </section>
 
@@ -86,7 +86,8 @@
 
           <div class="about-text">
             <p>
-              I love building things on the web. Currently learning HTML, CSS, JavaScript, Python and React.
+              I love building things on the web. Currently learning HTML,
+              CSS, JavaScript, Python and React.
             </p>
           </div>
         </div>
@@ -94,7 +95,7 @@
 
       <section id="skills" class="skills-section">
         <h2>My Skills</h2>
-        <div class="skills-grid">
+        <div class="skill-grid">
           <div class="skill-item" data-level="90">HTML</div>
           <div class="skill-item" data-level="80">CSS</div>
           <div class="skill-item" data-level="70">JavaScript</div>
@@ -108,44 +109,69 @@
         <div class="project-grid">
 
           <article class="project-card" data-category="ai">
-            <img src="sentiment-analysis.jpeg.png" alt="sentiment analysis project" height="210" width="200" />
+            <img
+              src="sentiment-analysis.jpeg.png"
+              alt="sentiment analysis project"
+              height="210"
+              width="200"
+            />
             <h3>Movie Review Sentiment Analyzer</h3>
-            <p>A machine learning web app that predicts whether a movie review is positive or negative with a confidence score, using NLP and a Naive Bayes model trained on 50,000 IMDB reviews with 84.8% accuracy.</p>
-            <div class="project-tag">
+            <p>
+              Predicts whether a movie review is positive or negative using
+              NLP and a Naive Bayes model, trained on 50,000 IMDB reviews
+              with 84.8% accuracy.
+            </p>
+            <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">NLTK</span>
-              <span class="tag">Scikit-learn</span>
               <span class="tag">Streamlit</span>
             </div>
-            <a href="https://abhinanda-sentiment-analyzer.streamlit.app" class="btn">Live Demo</a>
-            <a href="https://github.com/abhi1883/sentiment-analysis-app" class="btn">Github</a>
+            <a href="https://abhinanda-sentiment-analyzer.streamlit.app" class="btn btn-primary">Live Demo</a>
+            <a href="https://github.com/abhi1883/sentiment-analysis-app" class="btn btn-secondary">Github</a>
           </article>
 
           <article class="project-card" data-category="data">
-            <img src="career-trends.jpg" alt="career trends dashboard project" height="210" width="200" />
+            <img
+              src="career-trends.jpg"
+              alt="career trends dashboard project"
+              height="210"
+              width="200"
+            />
             <h3>Career Trends Dashboard</h3>
-            <p>Analyzes 565 data science job salaries and predicts salary based on job title, experience level, company location, and remote work status, with interactive charts. Best model (Random Forest) achieved R²=0.319, MAE=$33,480.</p>
-            <div class="project-tag">
+            <p>
+              Analyzes 565 data science job salaries and predicts salary
+              based on job title, experience, and location. Random Forest
+              model achieved R²=0.319.
+            </p>
+            <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">Pandas</span>
-              <span class="tag">Scikit-learn</span>
               <span class="tag">Streamlit</span>
             </div>
-            <a href="https://abhinanda-career-trends.streamlit.app" class="btn">Live Demo</a>
-            <a href="https://github.com/abhi1883/career-trends-dashboard-" class="btn">Github</a>
+            <a href="https://abhinanda-career-trends.streamlit.app" class="btn btn-primary">Live Demo</a>
+            <a href="https://github.com/abhi1883/career-trends-dashboard-" class="btn btn-secondary">Github</a>
           </article>
 
           <article class="project-card" data-category="ai">
-            <img src="plant-disease.jpg" alt="plant disease classifier project" height="210" width="200" />
+            <img
+              src="plant-disease.jpg"
+              alt="plant disease classifier project"
+              height="210"
+              width="200"
+            />
             <h3>Plant Disease Classifier</h3>
-            <p>A CNN-based image classifier trained on the PlantVillage dataset to detect plant diseases from leaf photos across 38 categories. Currently in progress.</p>
-            <div class="project-tag">
+            <p>
+              A CNN-based image classifier trained on the PlantVillage
+              dataset to detect plant diseases from leaf photos across 38
+              categories. In progress.
+            </p>
+            <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">TensorFlow</span>
               <span class="tag">CNN</span>
             </div>
-            <a href="#" class="btn">In Progress</a>
-            <a href="https://github.com/abhi1883" class="btn">Github</a>
+            <a href="#" class="btn btn-primary">In Progress</a>
+            <a href="https://github.com/abhi1883" class="btn btn-secondary">Github</a>
           </article>
 
         </div>
@@ -154,7 +180,7 @@
       <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <p>Have a project in mind?</p>
-        <form action="">
+        <form id="contact-form">
           <div class="form-group">
             <label for="name">Your Name</label>
             <input
@@ -167,31 +193,21 @@
           </div>
 
           <div class="form-group">
-            <label for="mail">Email</label>
+            <label for="email">Email</label>
             <input
               type="email"
               placeholder="Enter your email"
-              id="mail"
-              name="mail"
+              id="email"
+              name="email"
               required
             />
           </div>
 
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <select name="sub" id="sub">
-              <option value="a">Select a topic</option>
-              <option value="hire">I want to hire you</option>
-              <option value="collab">I want to collaborate</option>
-              <option value="other">Others</option></select
-            ><br />
-          </div>
-
-          <div class="form-group">
-            <label for="mesg">Message : </label>
+            <label for="message">Message : </label>
             <textarea
-              name="msg"
-              id="mesg"
+              name="message"
+              id="message"
               placeholder="Tell me about your project..."
             ></textarea>
           </div>
@@ -200,7 +216,9 @@
         </form>
         <p>
           Email:
-          <a href="mailto:abhinandha@gmail.com">abhinandha@gmail.com</a>
+          <a href="mailto:abhinandha@gmail.com"
+            >abhinandha@gmail.com</a
+          >
         </p>
       </section>
     </main>
@@ -209,8 +227,14 @@
       <p>&copy; 2026 Abhinanda. All rights reserved</p>
       <nav aria-label="Social links">
         <a href="https://github.com/abhi1883" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/abhinandha-udupa-b41591427/" target="_blank">LinkedIn</a>
+        
+          href="https://www.linkedin.com/in/abhinandha-udupa-b41591427/"
+          target="_blank"
+          >LinkedIn</a
+        >
       </nav>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
