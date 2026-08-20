@@ -22,13 +22,17 @@ function Contact() {
     if (Object.keys(newErrors).length === 0) {
       setStatus("Sending...");
       try {
-        await fetch("/", {
+        const response = await fetch("https://formspree.io/f/xjybjljz", {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(new FormData(form)).toString(),
+          headers: { Accept: "application/json" },
+          body: new FormData(form),
         });
-        setStatus("✅ Message sent");
-        form.reset();
+        if (response.ok) {
+          setStatus("✅ Message sent");
+          form.reset();
+        } else {
+          setStatus("❌ Failed, try again");
+        }
       } catch (error) {
         setStatus("❌ Failed, try again");
       }
@@ -40,9 +44,7 @@ function Contact() {
     <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
       <p>Have a project in mind?</p>
-      <form onSubmit={handleSubmit} name="contact" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Your Name</label>
           <input type="text" placeholder="Enter your name" id="name" name="name" />
@@ -57,13 +59,16 @@ function Contact() {
 
         <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me about your project..."
+          ></textarea>
           {errors.message && <span className="error-msg">{errors.message}</span>}
         </div>
 
-        <button type="submit" disabled={status !== "Send Message"}>{status}</button>
+        <button type="submit">{status}</button>
       </form>
-      <p>Email: <a href="mailto:abhinandha@gmail.com">abhinandha@gmail.com</a></p>
     </section>
   );
 }
